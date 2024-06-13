@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>망고톡 채팅방</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='chat.css') }}">
+</head>
+<body>
+  <div class="chat-container">
+    <header class="chat-header">
+      <div class="chat-info">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsVIG9Vfhkf5PtzNoLb8pZQqdgKBtCg5Ol5A&s" alt="프로필 사진" class="chat-profile-picture">
+        <span class="chat-name">친구1</span>
+      </div>
+      <div class="chat-icons">
+        <button class="chat-icon" onclick="location.href='/chats'">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsVIG9Vfhkf5PtzNoLb8pZQqdgKBtCg5Ol5A&s" width="20px" height="20px alt="친구목록">
+        </button>
+      </div>
+    </header>
+    <section class="chat-messages">
+      <div class="chat-message chat-message-self">
+        <span class="chat-message-text">ㅎ2</span>
+      </div>
+      <div class="chat-message">
+        <span class="chat-message-text">뭐해</span>
+      </div>
+      <div class="chat-message chat-message-self">
+        <span class="chat-message-text">피방가자</span>
+      </div>
+    </section>
+    <form class="chat-input-form">
+      <input type="text" class="chat-input" placeholder="메시지를 입력하세요...">
+      <button type="submit" class="chat-send-button">보내기</button>
+    </form>
+  </div>
+
+  <script src="chat.js"></script>
+</body>
+</html>

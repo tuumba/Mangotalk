@@ -1,0 +1,70 @@
+body {
+    font-family: '나눔고딕', sans-serif;
+    background-color: #F0F0F0;
+  }
+  
+  .mango-images {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .mango-images img {
+    width: auto;
+    height: auto;
+    max-width: 150px;
+    max-height: 150px;
+    mix-blend-mode: multiply;
+  }
+  .mango-images img:hover {
+    transition: all 3s;
+    transform: rotate(360deg);
+  }
+
+  .login-container {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000000;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input-group {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  label {
+    width: 80px;
+    text-align: right;
+    margin-right: 10px;
+    color: #fff;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    flex-grow: 1;
+    padding: 5px;
+    border: 1px solid #cccccc00;
+    border-radius: 5px;
+  }
+  
+  button[type="submit"] {
+    padding: 10px 15px;
+    background-color: #fff024;
+    color: #ffd000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }

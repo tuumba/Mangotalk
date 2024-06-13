@@ -1,0 +1,72 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+.friends-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.friends-header {
+  display: flex;
+  flex-direction: column; /* 아이콘 세로로 배열 */
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.friends-header h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 0; /* 상단 여백 제거 */
+}
+
+.header-icons {
+  margin-bottom: 20px; /* 버튼 하단 여백 추가 */
+}
+
+.header-icons button {
+  background-color: transparent; /* 버튼 배경 투명 */
+  border: none;
+  cursor: pointer;
+  margin-bottom: 10px; /* 버튼 간 간격 설정 */
+}
+
+.header-icons img {
+  width: 40px;
+  height: 40px;
+}
+
+.friends-list {
+  padding: 20px;
+}
+
+.friend-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.friend-profile-picture {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.friend-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.friend-status-message {
+  font-size: 14px;
+  color: #666;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>망고톡 친구 목록</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='friends.css') }}">
+</head>
+<body>
+  <div class="friends-container">
+    <header class="friends-header">
+      <div class="header-icons">
+        <button class="friends-button" onclick="location.href='/friends'">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1ntaKoUz5eA2klu24B1bQkKL1MQuZSIvtNg&s" alt="친구 목록">
+        </button>
+        <button class="chats-button" onclick="location.href='/chats'">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1ntaKoUz5eA2klu24B1bQkKL1MQuZSIvtNg&s" alt="채팅">
+        </button>
+      </div>
+      <h1>나의 친구</h1>
+    </header>
+    <section class="friends-list">
+      <div class="friend-item">
+        <img src="https://placehold.co/64x64" class="friend-profile-picture" alt="친구 프로필 사진">
+        <div class="friend-info">
+          <span class="friend-name">친구</span>
+          <span class="friend-status-message">무더운 여름</span>
+        </div>
+      </div>
+      <div class="friend-item">
+        <img src="https://placehold.co/64x64" class="friend-profile-picture" alt="친구 프로필 사진">
+        <div class="friend-info">
+          <span class="friend-name">친구</span>
+          <span class="friend-status-message">놀러갈 사람!</span>
+        </div>
+      </div>
+      <div class="friend-item">
+        <img src="https://placehold.co/64x64" class="friend-profile-picture" alt="친구 프로필 사진">
+        <div class="friend-info">
+          <span class="friend-name">친구</span>
+          <span class="friend-status-message">D-145</span>
+        </div>
+      </div>
+    </section>
+  </div>
+
+</body>
+</html>

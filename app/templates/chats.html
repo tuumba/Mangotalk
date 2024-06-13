@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>망고톡 채팅방 목록</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='chats.css') }}">
+</head>
+<body>
+  <div class="chats-container">
+    <header class="chats-header">
+      <h1>채팅방</h1>
+      <div class="header-icons">
+        <button class="chats-button" onclick="location.href='/friends'">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1ntaKoUz5eA2klu24B1bQkKL1MQuZSIvtNg&s"width="20px" height="20px" alt="친구 목록">
+          </button>
+          <button class="chats-button" onclick="location.href='/chats'">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1ntaKoUz5eA2klu24B1bQkKL1MQuZSIvtNg&s"width="20px" height="20px" alt="채팅">
+          </button>
+      </div>
+    </header>
+    <section class="chats-list">
+      <div class="chat-item">
+        <button class="chat-button" onclick="location.href='/chat'">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsVIG9Vfhkf5PtzNoLb8pZQqdgKBtCg5Ol5A&s" class="chat-profile-picture" alt="채팅방 프로필 사진">
+            <div class="chat-info">
+                <span class="chat-name">친구1</span>
+                <span class="chat-latest-message">피방가자</span>
+          </button>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
